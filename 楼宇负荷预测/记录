@@ -1,0 +1,92 @@
+一. 原始：
+    1. origin_data
+        模型：lstm_0
+    ### Train Score: 1.133 RMSE
+    ### Test Score: 1.034 RMSE
+    ### Train Score: 1.283 MSE
+    ### Test Score: 1.070 MSE
+
+二. 加入小时：
+    1. data_hour_v1: 0到23标记
+        模型：lstm_hour_1
+        
+    ### Train Score: 0.951 RMSE
+    ### Test Score: 0.990 RMSE
+    ### Train Score: 0.904 MSE
+    ### Test Score: 0.980 MSE
+    -
+
+    2. data_hour_v2: 网上的峰谷平
+        模型：lstm_hour_2
+        
+    ### Train Score: 0.955 RMSE
+    ### Test Score: 0.991 RMSE
+    ### Train Score: 0.912 MSE
+    ### Test Score: 0.981 MSE
+    -
+    
+    3. data_hour_v3: 自己设计的高中低（14~21高；11~13 and 22~0中；1~10低）
+        模型：lstm_hour_3
+    
+    ### Train Score: 0.952 RMSE
+    ### Test Score:  0.987 RMSE
+    ### Train Score: 0.907 MSE
+    ### Test Score: 0.973 MSE
+    -
+    
+    4. data_hour_v4：自己设计的高低（12~23高；0~10低）
+        模型：lstm_hour_4
+
+    ### Train Score: 0.988  RMSE
+    ### Test Score: 1.007 RMSE
+    ### Train Score: 0.981 MSE
+    ### Test Score: 1.013 MSE
+
+
+三. 加入月份：
+    data_with_month
+        模型：lstm_month
+    ### Train Score: 1.131 RMSE
+    ### Test Score: 1.004 RMSE
+    ### Train Score: 1.279 MSE
+    ### Test Score: 1.008 MSE
+
+
+四. 同时加入小时和月份：
+    1. data_hour_month_v1: 0到23标记
+        模型：lstm_hour_month_1
+        
+    ### Train Score: 0.971 RMSE
+    ### Test Score: 0.950 RMSE
+    ### Train Score: 0.942 MSE
+    ### Test Score: 0.902 MSE
+    -
+        
+    2. data_hour_month_v2: 网上的峰谷平
+        模型：lstm_hour_month_2
+      
+    ### Train Score: 0.959 RMSE
+    ### Test Score: 0.972 RMSE
+    ### Train Score: 0.920 MSE
+    ### Test Score: 0.945 MSE
+    -
+        
+    3. data_hour_month_v3: 自己设计的高中低（14~21高；11~13 and 22~0中；1~10低）
+        模型：lstm_hour_month_3
+    
+    ### Train Score: 0.926 RMSE
+    ### Test Score:  0.967 RMSE
+    ### Train Score: 0.857 MSE
+    ### Test Score: 0.935 MSE
+    -
+    
+    4. data_hour_month_v4：自己设计的高低（12~23高；0~10低）
+        模型：lstm_hour_month_4
+        
+    ### Train Score: 0.977 RMSE
+    ### Test Score: 0.989 RMSE
+    ### Train Score:  0.954 MSE
+    ### Test Score:  0.978 MSE   
+
+    
+
